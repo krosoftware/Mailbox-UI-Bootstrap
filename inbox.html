@@ -9,6 +9,7 @@
   <body>
 
 
+<div class="container">
 
 <!-- HORIZONTAL NAV (MAIL HOME, LOGOUT/MAYBE SETTINGS WITH DROPDOWN?) -->
     <ul class="nav justify-content-end">
@@ -18,16 +19,18 @@
       <li class="nav-item">
         <a class="nav-link" href="#">Refresh</a>
       </li>
-      <li class="nav-item dropdown">
-         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Settings</a>
-         <div class="dropdown-menu">
-           <a class="dropdown-item" href="#">Account</a>
-           <a class="dropdown-item" href="#">General</a>
-           <a class="dropdown-item" href="#">Help</a>
-           <div class="dropdown-divider"></div>
-           <a class="dropdown-item" href="#">Logout</a>
-         </div>
-       </li>
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Settings
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Account</a>
+          <a class="dropdown-item" href="#">General</a>
+          <a class="dropdown-item" href="#">Help</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Logout</a>
+        </div>
+      </div>
     </ul>
 
 
@@ -64,7 +67,7 @@
 
 
 
-
+</div>
 
 
 
