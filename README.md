@@ -1,2 +1,2 @@
 # Mailbox-UI
-Non-functional mailbox user interface
+Non-functional mailbox user interface using Bootstrap
