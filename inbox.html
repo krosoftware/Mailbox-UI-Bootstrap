@@ -5,49 +5,277 @@ PROJECT 1: MAILMAN - USER INTERFACE
 FEB 1, 2017
  -->
 
- <!DOCTYPE html>
- <html lang="en">
-   <head>
-     <meta charset="utf-8">
-     <neta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-     <!-- Bootstrap Stylesheet -->
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <neta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
-     <title>Login</title>
+    <title>Inbox</title>
 
-   </head>
-   <body>
+  </head>
+  <body>
 
-     <!-- Image and text -->
-     <nav class="navbar navbar-light bg-faded">
-       <a class="navbar-brand">
-         <img src="images/mailicon.png" width="50" height="45" class="d-inline-block align-top" alt="">
-         &nbsp;&nbsp;&nbsp;Mail
-       </a>
-     </nav>
 
 <div class="container">
-     <form>
-       <br>
-       <div class="alert alert-info" role="alert">
-         <img src="images/usericon.png" width="20" height="25">
-         <strong>User Login</strong>
-       </div>
-       <div class="form-group">
-         <label for="exampleInputEmail1">Email address</label>
-         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-       </div>
-       <div class="form-group">
-         <label for="exampleInputPassword1">Password</label>
-         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-       </div>
-         <button type="submit" class="btn btn-primary">
-           <a href="inbox.html" style="color:white;">
-           Submit
+
+<!-- HORIZONTAL NAV (MAIL HOME, LOGOUT/MAYBE SETTINGS WITH DROPDOWN?) -->
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link active" href="inbox.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="inbox.html">Refresh</a>
+      </li>
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img src="images/settingsicon.png"/>
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Account</a>
+          <a class="dropdown-item" href="#">General</a>
+          <a class="dropdown-item" href="#">Help</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Logout</a>
+        </div>
+      </div>
+    </ul>
+
+    <!-- Image and text -->
+    <nav class="navbar navbar-light bg-faded">
+      <a class="navbar-brand">
+        <img src="images/mailicon.png" width="50" height="45" class="d-inline-block align-top" alt="">
+        &nbsp;&nbsp;&nbsp;Inbox
+      </a>
+    </nav>
+
+<!-- VERTICAL NAV (COMPOSE, INBOX, SENT, SPAM, TRASH) -->
+  <div class="row">
+    <div class="col-sm-3">
+
+<!-- LEFT HAND SIDE VERTICAL NAV &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+      <ul class="list-group">
+        <div class="alert alert-info" role="alert">
+          <a href="inbox.html">
+          4 unread messages
           </a>
-         </button>
-     </form>
+        </div>
+        <li class="list-group-item active">
+          <a href="composenewmessage.html" style="color:white;">
+            Compose
+          </a>
+        </li>
+        <li class="list-group-item justify-content-between">
+          <a href="inbox.html">
+          Inbox
+          </a>
+          <span class="badge badge-default badge-pill">4</span>
+        </li>
+        <li class="list-group-item justify-content-between">
+          <a href="sent.html">
+          Sent
+          </a>
+          <span class="badge badge-default badge-pill"></span>
+        </li>
+        <li class="list-group-item justify-content-between">
+          <a href="spam.html">
+          Spam
+          </a>
+          <span class="badge badge-default badgboote-pill">33</span>
+        </li>
+        <li class="list-group-item justify-content-between">
+          <a href="trash.html">
+          Trash
+          </a>
+          <span class="badge badge-default badge-pill">7</span>
+        </li>
+      </ul>
+    </div> <!-- COL-SM-3 DIV -->
+<!-- END LEFT HAND SIDE VERTICAL NAV -->
+
+<!-- EMAIL MESSAGES -->
+    <div class="col-sm-9">
+      <ul class="list-group">
+
+
+
+        <table class="table table-hover">
+        <thead>
+          <tr>
+            <th></th>
+            <th>From</th>
+            <th>Subject</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"><div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+              </label>
+            </div>
+          </th>
+            <td><strong>Mark</strong></td>
+            <td><strong>Otto</strong> - oisjfosijfosifjsoasifjsoifjo</td>
+            <td><strong>@mdo</strong></td>
+          </tr>
+          <tr>
+            <th scope="row"><div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+              </label>
+            </div>
+          </th>
+            <td><strong>Jacob</strong></td>
+            <td><strong>Otto</strong> - oisjfosijfosifjsoasifjsoifjo</td>
+            <td><strong>@fat</strong></td>
+          </tr>
+          <tr>
+            <th scope="row"><div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+              </label>
+            </div>
+          </th>
+            <td><strong>Larry</strong></td>
+            <td><strong>Otto</strong> - oisjfosijfosifjsoasifjsoifjo</td>
+            <td><strong>@twitter</strong></td>
+          </tr>
+          <tr>
+            <th scope="row"><div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+              </label>
+            </div>
+          </th>
+            <td><img src="images/staricon.png" width="15" height="15">&nbsp; Mark</td>
+            <td>Otto - oisjfosijfosifjsoasifjsoifjo</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row"><div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+              </label>
+            </div>
+          </th>
+            <td>Mark</td>
+            <td>Otto- oisjfosijfosifjsoasifjsoifjo</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row"><div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+              </label>
+            </div>
+          </th>
+            <td>Mark</td>
+            <td>Otto - oisjfosijfosifjsoasifjsoifjo</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row"><div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+              </label>
+            </div>
+          </th>
+            <td>Mark</td>
+            <td>Otto - oisjfosijfosifjsoasifjsoifjo</td>
+            <td>@mdo<td>
+          </tr>
+          <tr>
+            <th scope="row"><div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+              </label>
+            </div>
+          </th>
+            <td><strong>Mark</strong></td>
+            <td><strong>Otto</strong> - oisjfosijfosifjsoasifjsoifjo</td>
+            <td><strong>@mdo</strong></td>
+          </tr>
+          <tr>
+            <th scope="row"><div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+              </label>
+            </div>
+          </th>
+            <td>Mark</td>
+            <td>Otto - oisjfosijfosifjsoasifjsoifjo</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row"><div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+              </label>
+            </div>
+          </th>
+            <td>Mark</td>
+            <td>Otto - oisjfosijfosifjsoasifjsoifjo</td>
+            <td>@mdo</td>
+          </tr>
+        </tbody>
+      </table>
+<!-- END EMAIL MESSAGES -->
+
+<!-- MAIL OPERATION BUTTONS (MARK AS READ, STAR, DELETE, ETC.) -->
+<div class="row">
+  <div class="col-sm-9">
+    <div class="span7 text-center">
+    <!-- Secondary, outline button -->
+    <button type="button" class="btn btn-secondary">Mark as read</button>
+
+    <!-- Indicates caution should be taken with this action -->
+    <button type="button" class="btn btn-warning">Star Message</button>
+
+    <!-- Indicates a dangerous or potentially negative action -->
+    <button type="button" class="btn btn-danger">Delete</button>
+  </div>
+  </div>
 </div>
+<!--END MAIL OPERATION BUTTONS -->
+
+<br>
+<br>
+
+<!-- PAGINATION     <div class="col-sm-9">  -->
+          <div class="row">
+            <div class="col-sm-9">
+              <nav aria-label="Pages">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                  </li>
+                  <li class="page-item active">
+                    <a class="page-link" href="#">1<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+  <!-- END PAGINATION -->
+
+      </div><!-- COL-SM-3 DIV -->
+    </div> <!-- ROW DIV -->
+</div> <!-- CONTAINER DIV -->
+
+
+
+
+
+
 
 
     <!--jQuery, Tether, JavaScript -->
