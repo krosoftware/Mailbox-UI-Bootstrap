@@ -24,10 +24,10 @@ FEB 1, 2017
 <!-- HORIZONTAL NAV (MAIL HOME, LOGOUT/MAYBE SETTINGS WITH DROPDOWN?) -->
     <ul class="nav justify-content-end">
       <li class="nav-item">
-        <a class="nav-link active" href="#">Home</a>
+        <a class="nav-link active" href="inbox.html">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Refresh</a>
+        <a class="nav-link" href="inbox.html">Refresh</a>
       </li>
       <div class="btn-group">
         <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -57,23 +57,39 @@ FEB 1, 2017
 
 <!-- LEFT HAND SIDE VERTICAL NAV &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
       <ul class="list-group">
-        <li class="list-group-item">4 unread messages</li>
-        <li class="list-group-item active">Compose</li>
+        <div class="alert alert-info" role="alert">
+          <a href="inbox.html">
+          4 unread messages
+          </a>
+        </div>
+        <li class="list-group-item active">
+          <a href="composenewmessage.html" style="color:white;">
+            Compose
+          </a>
+        </li>
         <li class="list-group-item justify-content-between">
+          <a href="inbox.html">
           Inbox
+          </a>
           <span class="badge badge-default badge-pill">4</span>
         </li>
         <li class="list-group-item justify-content-between">
+          <a href="sent.html">
           Sent
+          </a>
           <span class="badge badge-default badge-pill"></span>
         </li>
         <li class="list-group-item justify-content-between">
+          <a href="spam.html">
           Spam
-          <span class="badge badge-default badge-pill">33</span>
+          </a>
+          <span class="badge badge-default badgboote-pill">33</span>
         </li>
         <li class="list-group-item justify-content-between">
+          <a href="trash.html">
           Trash
-          <span class="badge badge-default badge-pill">17</span>
+          </a>
+          <span class="badge badge-default badge-pill">7</span>
         </li>
       </ul>
     </div> <!-- COL-SM-3 DIV -->
