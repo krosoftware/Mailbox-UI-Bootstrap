@@ -1,20 +1,120 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <neta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap Stylesheet -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  </head>
-  <body>
+<!--
+LISA SMITH
+COMP 484/L
+PROJECT 1: MAILMAN - USER INTERFACE
+FEB 1, 2017
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+   <head>
+     <meta charset="utf-8">
+     <neta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <!-- Bootstrap Stylesheet -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+     <title>Success</title>
+
+   </head>
+   <body>
 
 
+ <div class="container">
 
-    <!--jQuery, Tether, JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  </body>
+ <!-- HORIZONTAL NAV (MAIL HOME, LOGOUT/MAYBE SETTINGS WITH DROPDOWN?) -->
+     <ul class="nav justify-content-end">
+       <li class="nav-item">
+         <a class="nav-link active" href="inbox.html">Home</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link" href="composenewmessage">Refresh</a>
+       </li>
+       <div class="btn-group">
+         <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           <img src="images/settingsicon.png"/>
+         </button>
+         <div class="dropdown-menu">
+           <a class="dropdown-item" href="#">Account</a>
+           <a class="dropdown-item" href="#">General</a>
+           <a class="dropdown-item" href="#">Help</a>
+           <div class="dropdown-divider"></div>
+           <a class="dropdown-item" href="#">Logout</a>
+         </div>
+       </div>
+     </ul>
+
+<!-- MAILBOX ICON BAR -->
+     <nav class="navbar navbar-light bg-faded">
+       <a class="navbar-brand">
+         <img src="images/mailicon.png" width="50" height="45" class="d-inline-block align-top" alt="">
+         &nbsp;&nbsp;&nbsp;Compose New Message
+       </a>
+     </nav>
+<!-- END MAILBOX ICON BAR -->
+
+<br>
+
+ <!-- VERTICAL NAV (COMPOSE, INBOX, SENT, SPAM, TRASH) -->
+   <div class="row">
+     <div class="col-sm-3">
+
+ <!-- LEFT HAND SIDE VERTICAL NAV &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+       <ul class="list-group">
+         <div class="alert alert-info" role="alert">
+           <a href="inbox.html">
+           4 unread messages
+           </a>
+         </div>
+         <li class="list-group-item active">
+           <a href="composenewmessage.html" style="color:white;">
+             <img src="images/orangearrowicon.png" height="15" width="15">
+             Compose
+           </a>
+         </li>
+         <li class="list-group-item justify-content-between">
+           <a href="inbox.html">
+           Inbox
+           </a>
+           <span class="badge badge-default badge-pill">4</span>
+         </li>
+         <li class="list-group-item justify-content-between">
+           <a href="sent.html">
+           Sent
+           </a>
+           <span class="badge badge-default badge-pill"></span>
+         </li>
+         <li class="list-group-item justify-content-between">
+           <a href="spam.html">
+           Spam
+           </a>
+           <span class="badge badge-default badgboote-pill">33</span>
+         </li>
+         <li class="list-group-item justify-content-between">
+           <a href="trash.html">
+           <img src="images/trashicon.png" width="15" height="15">
+           Trash
+           </a>
+           <span class="badge badge-default badge-pill">7</span>
+         </li>
+       </ul>
+     </div> <!-- COL-SM-3 DIV -->
+ <!-- END LEFT HAND SIDE VERTICAL NAV -->
 
 
-</html>
+ <!-- EMAIL MESSAGES -->
+     <div class="col-sm-9">
+         <div class="container">
+
+           <div class="alert alert-success" role="alert">
+             <strong>Message Sent!</strong> Your message has been sent. <br> <a href="inbox.html"><strong>Click here to return to your inbox</strong></a>
+           </div>
+
+
+        </div>
+
+ <!-- END EMAIL MESSAGES -->
+
+
+       </div><!-- COL-SM-3 DIV -->
+     </div> <!-- ROW DIV -->
+ </div> <!-- CONTAINER DIV -->
