@@ -24,7 +24,7 @@ FEB 1, 2017
 <!-- HORIZONTAL NAV (MAIL HOME, LOGOUT/MAYBE SETTINGS WITH DROPDOWN?) -->
     <ul class="nav justify-content-end">
       <li class="nav-item">
-        <a class="nav-link active" href="#">Home</a>
+        <a class="nav-link active" href="inbox.html">Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="trash.html">Refresh</a>
@@ -43,13 +43,16 @@ FEB 1, 2017
       </div>
     </ul>
 
-    <!-- Image and text -->
-    <nav class="navbar navbar-light bg-faded">
-      <a class="navbar-brand">
-        <img src="images/mailicon.png" width="50" height="45" class="d-inline-block align-top" alt="">
-        &nbsp;&nbsp;&nbsp;Inbox
-      </a>
-    </nav>
+<!-- MAILBOX ICON BAR -->
+         <nav class="navbar navbar-light bg-faded">
+           <a class="navbar-brand">
+             <img src="images/mailicon.png" width="50" height="45" class="d-inline-block align-top" alt="">
+             &nbsp;&nbsp;&nbsp;Trash
+           </a>
+         </nav>
+<!-- END MAILBOX ICON BAR -->
+
+<br>
 
 <!-- VERTICAL NAV (COMPOSE, INBOX, SENT, SPAM, TRASH) -->
   <div class="row">
@@ -86,8 +89,10 @@ FEB 1, 2017
                 <span class="badge badge-default badgboote-pill">33</span>
               </li>
               <li class="list-group-item justify-content-between">
+                <img src="images/orangearrowicon.png" height="15" width="15">
                 <a href="trash.html">
-                Trash
+                  <img src="images/trashicon.png" width="15" height="15">
+                  Trash
                 </a>
                 <span class="badge badge-default badge-pill">7</span>
               </li>
