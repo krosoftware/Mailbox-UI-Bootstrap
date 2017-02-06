@@ -3,6 +3,7 @@ LISA SMITH
 COMP 484/L
 PROJECT 1: MAILMAN - USER INTERFACE
 FEB 1, 2017
+BOOTSTRAP
  -->
 
  <!DOCTYPE html>
@@ -21,7 +22,7 @@ FEB 1, 2017
 
  <div class="container">
 
- <!-- HORIZONTAL NAV (MAIL HOME, LOGOUT/MAYBE SETTINGS WITH DROPDOWN?) -->
+<!-- HORIZONTAL NAV -->
      <ul class="nav justify-content-end">
        <li class="nav-item">
          <a class="nav-link active" href="inbox.html">Home</a>
@@ -42,6 +43,7 @@ FEB 1, 2017
          </div>
        </div>
      </ul>
+  <!-- END HORIZONTAL NAV -->
 
 <!-- MAILBOX ICON BAR -->
      <nav class="navbar navbar-light bg-faded">
@@ -54,12 +56,10 @@ FEB 1, 2017
 
 <br>
 
- <!-- VERTICAL NAV (COMPOSE, INBOX, SENT, SPAM, TRASH) -->
+ <!-- LEFT HAND SIDE VERTICAL NAV -->
    <div class="row">
      <div class="col-sm-3">
 
- <!-- LEFT HAND SIDE VERTICAL NAV &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
-       <ul class="list-group">
          <div class="alert alert-info" role="alert">
            <a href="inbox.html">
            4 unread messages
@@ -101,7 +101,7 @@ FEB 1, 2017
  <!-- END LEFT HAND SIDE VERTICAL NAV -->
 
 
- <!-- EMAIL MESSAGES -->
+ <!-- MESSAGE SUCCESS -->
      <div class="col-sm-9">
          <div class="container">
 
@@ -109,12 +109,23 @@ FEB 1, 2017
              <strong>Message Sent!</strong> Your message has been sent. <br> <a href="inbox.html"><strong>Click here to return to your inbox</strong></a>
            </div>
 
-
         </div>
 
- <!-- END EMAIL MESSAGES -->
-
+ <!-- END MESSAGE SUCCESS-->
 
        </div><!-- COL-SM-3 DIV -->
      </div> <!-- ROW DIV -->
  </div> <!-- CONTAINER DIV -->
+
+
+
+
+
+ <!--jQuery, Tether, JavaScript -->
+ <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+
+
+</html>
