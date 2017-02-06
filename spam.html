@@ -3,6 +3,7 @@ LISA SMITH
 COMP 484/L
 PROJECT 1: MAILMAN - USER INTERFACE
 FEB 1, 2017
+BOOTSTRAP
  -->
 
 <!DOCTYPE html>
@@ -21,7 +22,7 @@ FEB 1, 2017
 
 <div class="container">
 
-<!-- HORIZONTAL NAV (MAIL HOME, LOGOUT/MAYBE SETTINGS WITH DROPDOWN?) -->
+<!-- HORIZONTAL NAV -->
     <ul class="nav justify-content-end">
       <li class="nav-item">
         <a class="nav-link active" href="inbox.html">Home</a>
@@ -42,6 +43,7 @@ FEB 1, 2017
         </div>
       </div>
     </ul>
+<!-- END HORIZONTAL NAV -->
 
 <!-- MAILBOX ICON BAR -->
          <nav class="navbar navbar-light bg-faded">
@@ -54,11 +56,10 @@ FEB 1, 2017
 
 <br>
 
-<!-- VERTICAL NAV (COMPOSE, INBOX, SENT, SPAM, TRASH) -->
+<!-- LEFT HAND SIDE VERTICAL NAV -->
   <div class="row">
     <div class="col-sm-3">
 
-      <!-- LEFT HAND SIDE VERTICAL NAV &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
             <ul class="list-group">
               <div class="alert alert-info" role="alert">
                 <a href="inbox.html">
@@ -97,13 +98,10 @@ FEB 1, 2017
               </li>
             </ul>
           </div> <!-- COL-SM-3 DIV -->
-      <!-- END LEFT HAND SIDE VERTICAL NAV -->
+<!-- END LEFT HAND SIDE VERTICAL NAV -->
 
 <!-- EMAIL MESSAGES -->
     <div class="col-sm-9">
-      <ul class="list-group">
-
-
 
         <table class="table table-hover">
         <thead>
@@ -122,9 +120,9 @@ FEB 1, 2017
               </label>
             </div>
           </th>
-            <td><strong>Mark</strong></td>
-            <td><strong>Otto</strong> - oisjfosijfosifjsoasifjsoifjo</td>
-            <td><strong>@mdo</strong></td>
+            <td><strong>Mark Pincus</strong></td>
+            <td><strong>**TOTALLY</strong> - You qualify for a free vacation. Please enter social security...</td>
+            <td><strong>Feb 1</strong></td>
           </tr>
           <tr>
             <th scope="row"><div class="form-check">
@@ -133,9 +131,9 @@ FEB 1, 2017
               </label>
             </div>
           </th>
-            <td><strong>Jacob</strong></td>
-            <td><strong>Otto</strong> - oisjfosijfosifjsoasifjsoifjo</td>
-            <td><strong>@fat</strong></td>
+            <td><strong>UHealth</strong></td>
+            <td><strong>***FREE VIAGRA***</strong> - 100% satisfaction guaranteed! Fill in your information...</td>
+            <td><strong>Feb 1</strong></td>
           </tr>
           <tr>
             <th scope="row"><div class="form-check">
@@ -144,9 +142,9 @@ FEB 1, 2017
               </label>
             </div>
           </th>
-            <td><strong>Larry</strong></td>
-            <td><strong>Otto</strong> - oisjfosijfosifjsoasifjsoifjo</td>
-            <td><strong>@twitter</strong></td>
+            <td><strong>Carli Sky</strong></td>
+            <td><strong>*FREE MONEY $$$*</strong> - Send us your credit card and we will send back free money!...</td>
+            <td><strong>Jan 31</strong></td>
           </tr>
           <tr>
             <th scope="row"><div class="form-check">
@@ -155,9 +153,9 @@ FEB 1, 2017
               </label>
             </div>
           </th>
-            <td><strong>Jacob</strong></td>
-            <td><strong>Otto</strong> - oisjfosijfosifjsoasifjsoifjo</td>
-            <td><strong>@fat</strong></td>
+            <td><strong>United Airlines</strong></td>
+            <td><strong>Running Low On Travel Miles?</strong> - Apply for our credit card and receive triple points for miles...</td>
+            <td><strong>Jan 30</strong></td>
           </tr>
           <tr>
             <th scope="row"><div class="form-check">
@@ -166,9 +164,9 @@ FEB 1, 2017
               </label>
             </div>
           </th>
-            <td><strong>Jacob</strong></td>
-            <td><strong>Otto</strong> - oisjfosijfosifjsoasifjsoifjo</td>
-            <td><strong>@fat</strong></td>
+            <td><strong>Starbucks</strong></td>
+            <td><strong>Free Coffee</strong> - Happy birthday! Free coffee on your birthday! All you have to do is...</td>
+            <td><strong>Jan 29</strong></td>
           </tr>
           <tr>
             <th scope="row"><div class="form-check">
@@ -177,9 +175,9 @@ FEB 1, 2017
               </label>
             </div>
           </th>
-            <td><strong>Jacob</strong></td>
-            <td><strong>Otto</strong> - oisjfosijfosifjsoasifjsoifjo</td>
-            <td><strong>@fat</strong></td>
+            <td><strong>Rool, King K.</strong></td>
+            <td><strong>Stupid Monkeys</strong> - I will end you! One of these days!</td>
+            <td><strong>Jan 28</strong></td>
           </tr>
           <tr>
             <th scope="row"><div class="form-check">
@@ -188,9 +186,9 @@ FEB 1, 2017
               </label>
             </div>
           </th>
-            <td><strong>Jacob</strong></td>
-            <td><strong>Otto</strong> - oisjfosijfosifjsoasifjsoifjo</td>
-            <td><strong>@fat</strong></td>
+            <td><strong>Redbubble</strong></td>
+            <td><strong>Get 20% off everything!</strong> - Answer the tapping at your chamber inbox...</td>
+            <td><strong>Jan 28</strong></td>
           </tr>
           <tr>
             <th scope="row"><div class="form-check">
@@ -199,48 +197,22 @@ FEB 1, 2017
               </label>
             </div>
           </th>
-            <td><strong>Mark</strong></td>
-            <td><strong>Otto</strong> - oisjfosijfosifjsoasifjsoifjo</td>
-            <td><strong>@mdo</strong></td>
-          </tr>
-          <tr>
-            <th scope="row"><div class="form-check">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-              </label>
-            </div>
-          </th>
-            <td><strong>Jacob</strong></td>
-            <td><strong>Otto</strong> - oisjfosijfosifjsoasifjsoifjo</td>
-            <td><strong>@fat</strong></td>
-          </tr>
-          <tr>
-            <th scope="row"><div class="form-check">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-              </label>
-            </div>
-          </th>
-            <td><strong>Jacob</strong></td>
-            <td><strong>Otto</strong> - oisjfosijfosifjsoasifjsoifjo</td>
-            <td><strong>@fat</strong></td>
+            <td><strong>T-Mobile USA</strong></td>
+            <td><strong>Thank you for your order!</strong> - Order number 1984DFW9V08Q3CC9830SW3</td>
+            <td><strong>Jan 27</strong></td>
           </tr>
         </tbody>
       </table>
-
 <!-- END EMAIL MESSAGES -->
 
 <!-- MAIL OPERATION BUTTONS (MARK AS READ, STAR, DELETE, ETC.) -->
 <div class="row">
   <div class="col-sm-9">
 
-<div class="span7 text-center">
-    <!-- Secondary, outline button -->
-    <button type="button" class="btn btn-info">Move to inbox</button>
-
-    <!-- Indicates a dangerous or potentially negative action -->
-    <button type="button" class="btn btn-danger">Delete</button>
-  </div>
+    <div class="span7 text-center">
+      <button type="button" class="btn btn-info">Move to inbox</button>
+      <button type="button" class="btn btn-danger">Delete</button>
+    </div>
   </div>
 </div>
 <!--END MAIL OPERATION BUTTONS -->
@@ -248,7 +220,7 @@ FEB 1, 2017
 <br>
 <br>
 
-<!-- PAGINATION     <div class="col-sm-9">  -->
+<!-- PAGINATION -->
           <div class="row">
             <div class="col-sm-9">
               <nav aria-label="Pages">
