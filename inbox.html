@@ -3,6 +3,7 @@ LISA SMITH
 COMP 484/L
 PROJECT 1: MAILMAN - USER INTERFACE
 FEB 1, 2017
+BOOTSTRAP
  -->
 
 <!DOCTYPE html>
@@ -21,7 +22,7 @@ FEB 1, 2017
 
 <div class="container">
 
-<!-- HORIZONTAL NAV (MAIL HOME, LOGOUT/MAYBE SETTINGS WITH DROPDOWN?) -->
+<!-- HORIZONTAL NAV -->
     <ul class="nav justify-content-end">
       <li class="nav-item">
         <a class="nav-link active" href="inbox.html">Home</a>
@@ -38,28 +39,27 @@ FEB 1, 2017
           <a class="dropdown-item" href="#">General</a>
           <a class="dropdown-item" href="#">Help</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Logout</a>
+          <a class="dropdown-item" href="index.html">Logout</a>
         </div>
       </div>
     </ul>
+<!-- END HORIZONTAL NAV -->
 
 <!-- MAILBOX ICON BAR -->
     <nav class="navbar navbar-light bg-faded">
       <a class="navbar-brand">
-        <img src="images/mailicon.png" width="50" height="45" class="d-inline-block align-top" alt="">
-        &nbsp;&nbsp;&nbsp;Inbox
+          <img src="images/mailicon.png" width="50" height="45" class="d-inline-block align-top" alt="">
+          &nbsp;&nbsp;&nbsp;Inbox
       </a>
     </nav>
 <!-- END MAILBOX ICON BAR -->
 
 <br>
 
-
-<!-- VERTICAL NAV (COMPOSE, INBOX, SENT, SPAM, TRASH) -->
+<!-- LEFT HAND SIDE VERTICAL NAV -->
   <div class="row">
     <div class="col-sm-3">
 
-<!-- LEFT HAND SIDE VERTICAL NAV &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
       <ul class="list-group">
         <div class="alert alert-info" role="alert">
           <a href="inbox.html">
@@ -102,9 +102,6 @@ FEB 1, 2017
 
 <!-- EMAIL MESSAGES -->
     <div class="col-sm-9">
-      <ul class="list-group">
-
-
 
         <table class="table table-hover">
         <thead>
@@ -123,9 +120,9 @@ FEB 1, 2017
               </label>
             </div>
           </th>
-            <td><strong>Mark</strong></td>
-            <td><strong>Otto</strong> - oisjfosijfosifjsoasifjsoifjo</td>
-            <td><strong>@mdo</strong></td>
+            <td><strong>Kondo, Koji</strong></td>
+            <td><strong>The Legend of Zelda</strong> - Here is the soundtrack. Please let...</td>
+            <td><strong>Feb 1</strong></td>
           </tr>
           <tr>
             <th scope="row"><div class="form-check">
@@ -134,9 +131,9 @@ FEB 1, 2017
               </label>
             </div>
           </th>
-            <td><strong>Jacob</strong></td>
-            <td><strong>Otto</strong> - oisjfosijfosifjsoasifjsoifjo</td>
-            <td><strong>@fat</strong></td>
+            <td><strong>Bethesda Store</strong></td>
+            <td><strong>Account confirmation</strong> - Your e-mail must be confirmed before...</td>
+            <td><strong>Feb 1</strong></td>
           </tr>
           <tr>
             <th scope="row"><div class="form-check">
@@ -145,9 +142,9 @@ FEB 1, 2017
               </label>
             </div>
           </th>
-            <td><strong>Larry</strong></td>
-            <td><strong>Otto</strong> - oisjfosijfosifjsoasifjsoifjo</td>
-            <td><strong>@twitter</strong></td>
+            <td><strong>Nigerian Prince</strong></td>
+            <td><strong>HELP</strong> - Send $1,000,000 to help. I will double your investment...</td>
+            <td><strong>Jan 31</strong></td>
           </tr>
           <tr>
             <th scope="row"><div class="form-check">
@@ -156,9 +153,9 @@ FEB 1, 2017
               </label>
             </div>
           </th>
-            <td><img src="images/staricon.png" width="15" height="15">&nbsp; Mark</td>
-            <td>Otto - oisjfosijfosifjsoasifjsoifjo</td>
-            <td>@mdo</td>
+            <td><img src="images/staricon.png" width="15" height="15">&nbsp; Cat</td>
+            <td>Meow - Meow meow meow meow meow meow...</td>
+            <td>Jan 29</td>
           </tr>
           <tr>
             <th scope="row"><div class="form-check">
@@ -167,9 +164,9 @@ FEB 1, 2017
               </label>
             </div>
           </th>
-            <td>Mark</td>
-            <td>Otto- oisjfosijfosifjsoasifjsoifjo</td>
-            <td>@mdo</td>
+            <td>TurboTax</td>
+            <td>TurboTax Update: E-file successful- Status update - your e-file...</td>
+            <td>Jan 27</td>
           </tr>
           <tr>
             <th scope="row"><div class="form-check">
@@ -178,9 +175,9 @@ FEB 1, 2017
               </label>
             </div>
           </th>
-            <td>Mark</td>
-            <td>Otto - oisjfosijfosifjsoasifjsoifjo</td>
-            <td>@mdo</td>
+            <td>Uber Receipts</td>
+            <td>Your Friday evening trip with Uber - $17.23. Thank you for choosing...</td>
+            <td>Jan 27</td>
           </tr>
           <tr>
             <th scope="row"><div class="form-check">
@@ -189,9 +186,9 @@ FEB 1, 2017
               </label>
             </div>
           </th>
-            <td>Mark</td>
-            <td>Otto - oisjfosijfosifjsoasifjsoifjo</td>
-            <td>@mdo<td>
+            <td>Kickstarter</td>
+            <td>Project Update #999 - Sorry the project is delayed another year...</td>
+            <td>Jan 25<td>
           </tr>
           <tr>
             <th scope="row"><div class="form-check">
@@ -200,31 +197,9 @@ FEB 1, 2017
               </label>
             </div>
           </th>
-            <td><strong>Mark</strong></td>
-            <td><strong>Otto</strong> - oisjfosijfosifjsoasifjsoifjo</td>
-            <td><strong>@mdo</strong></td>
-          </tr>
-          <tr>
-            <th scope="row"><div class="form-check">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-              </label>
-            </div>
-          </th>
-            <td>Mark</td>
-            <td>Otto - oisjfosijfosifjsoasifjsoifjo</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row"><div class="form-check">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-              </label>
-            </div>
-          </th>
-            <td>Mark</td>
-            <td>Otto - oisjfosijfosifjsoasifjsoifjo</td>
-            <td>@mdo</td>
+            <td><strong>Blizzard Entertainment</strong></td>
+            <td><strong>Battle.net Account Verification</strong> - Hello! Welcome to Battle.net...</td>
+            <td><strong>Jan 25</strong></td>
           </tr>
         </tbody>
       </table>
@@ -234,13 +209,8 @@ FEB 1, 2017
 <div class="row">
   <div class="col-sm-9">
     <div class="span7 text-center">
-    <!-- Secondary, outline button -->
     <button type="button" class="btn btn-secondary">Mark as read</button>
-
-    <!-- Indicates caution should be taken with this action -->
     <button type="button" class="btn btn-warning">Star Message</button>
-
-    <!-- Indicates a dangerous or potentially negative action -->
     <button type="button" class="btn btn-danger">Delete</button>
   </div>
   </div>
@@ -250,7 +220,7 @@ FEB 1, 2017
 <br>
 <br>
 
-<!-- PAGINATION     <div class="col-sm-9">  -->
+<!-- PAGINATION -->
           <div class="row">
             <div class="col-sm-9">
               <nav aria-label="Pages">
@@ -270,7 +240,7 @@ FEB 1, 2017
               </nav>
             </div>
           </div>
-  <!-- END PAGINATION -->
+<!-- END PAGINATION -->
 
       </div><!-- COL-SM-3 DIV -->
     </div> <!-- ROW DIV -->
