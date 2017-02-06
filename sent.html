@@ -3,6 +3,7 @@ LISA SMITH
 COMP 484/L
 PROJECT 1: MAILMAN - USER INTERFACE
 FEB 1, 2017
+BOOTSTRAP
  -->
 
 <!DOCTYPE html>
@@ -21,7 +22,7 @@ FEB 1, 2017
 
 <div class="container">
 
-<!-- HORIZONTAL NAV (MAIL HOME, LOGOUT/MAYBE SETTINGS WITH DROPDOWN?) -->
+<!-- HORIZONTAL NAV -->
     <ul class="nav justify-content-end">
       <li class="nav-item">
         <a class="nav-link active" href="inbox.html">Home</a>
@@ -42,6 +43,7 @@ FEB 1, 2017
         </div>
       </div>
     </ul>
+<!-- END HORIZONTAL NAV -->
 
 <!-- MAILBOX ICON BAR -->
          <nav class="navbar navbar-light bg-faded">
@@ -54,11 +56,10 @@ FEB 1, 2017
 
 <br>
 
-<!-- VERTICAL NAV (COMPOSE, INBOX, SENT, SPAM, TRASH) -->
+<!-- LEFT HAND SIDE VERTICAL NAV -->
   <div class="row">
     <div class="col-sm-3">
 
-      <!-- LEFT HAND SIDE VERTICAL NAV &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
             <ul class="list-group">
               <div class="alert alert-info" role="alert">
                 <a href="inbox.html">
@@ -97,19 +98,16 @@ FEB 1, 2017
               </li>
             </ul>
           </div> <!-- COL-SM-3 DIV -->
-      <!-- END LEFT HAND SIDE VERTICAL NAV -->
+<!-- END LEFT HAND SIDE VERTICAL NAV -->
 
 <!-- EMAIL MESSAGES -->
     <div class="col-sm-9">
-      <ul class="list-group">
-
-
 
         <table class="table table-hover">
         <thead>
           <tr>
             <th></th>
-            <th>From</th>
+            <th>To</th>
             <th>Subject</th>
             <th>Date</th>
           </tr>
@@ -122,9 +120,9 @@ FEB 1, 2017
               </label>
             </div>
           </th>
-            <td>Mark</td>
-            <td>Otto - oisjfosijfosifjsoasifjsoifjo</td>
-            <td>@mdo</td>
+            <td>Wilson, Wade</td>
+            <td>Deadpool - I'm your biggest fan!...</td>
+            <td>Feb 1</td>
           </tr>
           <tr>
             <th scope="row"><div class="form-check">
@@ -133,9 +131,9 @@ FEB 1, 2017
               </label>
             </div>
           </th>
-            <td>Jacob</td>
-            <td>Otto - oisjfosijfosifjsoasifjsoifjo</td>
-            <td>@fat</td>
+            <td>Fritz, Matthew</td>
+            <td>Donkey Kong Country 2 - I hate when the DK coins are in the goal posts</td>
+            <td>Feb 1</td>
           </tr>
           <tr>
             <th scope="row"><div class="form-check">
@@ -144,9 +142,9 @@ FEB 1, 2017
               </label>
             </div>
           </th>
-            <td>Larry</td>
-            <td>Otto - oisjfosijfosifjsoasifjsoifjo</td>
-            <td>@twitter</td>
+            <td>Skywalker, Luke</td>
+            <td>A bit of advice - Use the force, Luke!</td>
+            <td>Jan 29</td>
           </tr>
           <tr>
             <th scope="row"><div class="form-check">
@@ -155,9 +153,9 @@ FEB 1, 2017
               </label>
             </div>
           </th>
-            <td>Mark</td>
-            <td>Otto - oisjfosijfosifjsoasifjsoifjo</td>
-            <td>@mdo</td>
+            <td>Dumbledore, Albus</td>
+            <td>Hogwarts Admission - Please consider admitting me to Hogwarts...</td>
+            <td>Jan 25</td>
           </tr>
           <tr>
             <th scope="row"><div class="form-check">
@@ -166,9 +164,9 @@ FEB 1, 2017
               </label>
             </div>
           </th>
-            <td>Mark</td>
-            <td>Otto- oisjfosijfosifjsoasifjsoifjo</td>
-            <td>@mdo</td>
+            <td>Parker, Peter</td>
+            <td>Spider Pig - Spider pig, spider pig, does whatever a spider pig does...</td>
+            <td>Jan 16</td>
           </tr>
           <tr>
             <th scope="row"><div class="form-check">
@@ -177,9 +175,9 @@ FEB 1, 2017
               </label>
             </div>
           </th>
-            <td>Mark</td>
-            <td>Otto - oisjfosijfosifjsoasifjsoifjo</td>
-            <td>@mdo</td>
+            <td>Griffith, Meg</td>
+            <td>Meg - Shutup Meg</td>
+            <td>Jan 1</td>
           </tr>
           <tr>
             <th scope="row"><div class="form-check">
@@ -188,9 +186,9 @@ FEB 1, 2017
               </label>
             </div>
           </th>
-            <td>Mark</td>
-            <td>Otto - oisjfosijfosifjsoasifjsoifjo</td>
-            <td>@mdo<td>
+            <td>Wayne, Bruce</td>
+            <td>What happens when Batman sees Catwoman? - The dark knight rises</td>
+            <td>Dec 31</td>
           </tr>
           <tr>
             <th scope="row"><div class="form-check">
@@ -199,46 +197,19 @@ FEB 1, 2017
               </label>
             </div>
           </th>
-            <td>Mark</td>
-            <td>Otto - oisjfosijfosifjsoasifjsoifjo</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row"><div class="form-check">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-              </label>
-            </div>
-          </th>
-            <td>Mark</td>
-            <td>Otto - oisjfosijfosifjsoasifjsoifjo</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row"><div class="form-check">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-              </label>
-            </div>
-          </th>
-            <td>Mark</td>
-            <td>Otto - oisjfosijfosifjsoasifjsoifjo</td>
-            <td>@mdo</td>
+            <td>Pan, Peter</td>
+            <td>Neverland - Where is it and how do I get there?</td>
+            <td>Dec 26<td>
           </tr>
         </tbody>
       </table>
-
 <!-- END EMAIL MESSAGES -->
 
 <!-- MAIL OPERATION BUTTONS (MARK AS READ, STAR, DELETE, ETC.) -->
 <div class="row">
   <div class="col-sm-9">
     <div class="span7 text-center">
-
-      <!-- Indicates caution should be taken with this action -->
       <button type="button" class="btn btn-warning">Star Message</button>
-
-      <!-- Indicates a dangerous or potentially negative action -->
       <button type="button" class="btn btn-danger">Delete</button>
   </div>
   </div>
@@ -248,7 +219,7 @@ FEB 1, 2017
 <br>
 <br>
 
-<!-- PAGINATION     <div class="col-sm-9">  -->
+<!-- PAGINATION -->
           <div class="row">
             <div class="col-sm-9">
               <nav aria-label="Pages">
@@ -279,8 +250,8 @@ FEB 1, 2017
 
 
 
- 
- 
+
+
     <!--jQuery, Tether, JavaScript -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
