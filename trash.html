@@ -3,6 +3,7 @@ LISA SMITH
 COMP 484/L
 PROJECT 1: MAILMAN - USER INTERFACE
 FEB 1, 2017
+BOOTSTRAP
  -->
 
 <!DOCTYPE html>
@@ -21,7 +22,7 @@ FEB 1, 2017
 
 <div class="container">
 
-<!-- HORIZONTAL NAV (MAIL HOME, LOGOUT/MAYBE SETTINGS WITH DROPDOWN?) -->
+<!-- HORIZONTAL NAV -->
     <ul class="nav justify-content-end">
       <li class="nav-item">
         <a class="nav-link active" href="inbox.html">Home</a>
@@ -42,6 +43,7 @@ FEB 1, 2017
         </div>
       </div>
     </ul>
+<!-- END HORIZONTAL NAV -->
 
 <!-- MAILBOX ICON BAR -->
          <nav class="navbar navbar-light bg-faded">
@@ -54,11 +56,10 @@ FEB 1, 2017
 
 <br>
 
-<!-- VERTICAL NAV (COMPOSE, INBOX, SENT, SPAM, TRASH) -->
+<!-- LEFT HAND SIDE VERTICAL NAV-->
   <div class="row">
     <div class="col-sm-3">
 
-      <!-- LEFT HAND SIDE VERTICAL NAV &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
             <ul class="list-group">
               <div class="alert alert-info" role="alert">
                 <a href="inbox.html">
@@ -89,8 +90,8 @@ FEB 1, 2017
                 <span class="badge badge-default badgboote-pill">33</span>
               </li>
               <li class="list-group-item justify-content-between">
-                <img src="images/orangearrowicon.png" height="15" width="15">
                 <a href="trash.html">
+                  <img src="images/orangearrowicon.png" height="15" width="15">
                   <img src="images/trashicon.png" width="15" height="15">
                   Trash
                 </a>
@@ -98,13 +99,11 @@ FEB 1, 2017
               </li>
             </ul>
           </div> <!-- COL-SM-3 DIV -->
-      <!-- END LEFT HAND SIDE VERTICAL NAV -->
+<!-- END LEFT HAND SIDE VERTICAL NAV -->
 
 <!-- EMAIL MESSAGES -->
     <div class="col-sm-9">
       <ul class="list-group">
-
-
 
         <table class="table table-hover">
         <thead>
@@ -123,9 +122,9 @@ FEB 1, 2017
               </label>
             </div>
           </th>
-            <td>Mark</td>
-            <td>Otto - oisjfosijfosifjsoasifjsoifjo</td>
-            <td>@mdo</td>
+          <td><strong>Cows</strong></td>
+          <td><strong>Moo - Moo moo moo moo moo moo moo moo moo moo moo</strong></td>
+          <td><strong>Feb 1</strong></td>
           </tr>
           <tr>
             <th scope="row"><div class="form-check">
@@ -134,9 +133,9 @@ FEB 1, 2017
               </label>
             </div>
           </th>
-            <td>Jacob</td>
-            <td>Otto - oisjfosijfosifjsoasifjsoifjo</td>
-            <td>@fat</td>
+          <td><strong>Jokes Daily</strong></td>
+          <td><strong>How do you count cows? - With a cowculator.</strong></td>
+          <td><strong>Feb 1</strong></td>
           </tr>
           <tr>
             <th scope="row"><div class="form-check">
@@ -145,9 +144,9 @@ FEB 1, 2017
               </label>
             </div>
           </th>
-            <td>Larry</td>
-            <td>Otto - oisjfosijfosifjsoasifjsoifjo</td>
-            <td>@twitter</td>
+          <td><strong>Pigs</strong></td>
+          <td><strong>Oink - Please don't turn me into delicious bacon!</strong></td>
+          <td><strong>Jan 15</strong></td>
           </tr>
           <tr>
             <th scope="row"><div class="form-check">
@@ -156,9 +155,9 @@ FEB 1, 2017
               </label>
             </div>
           </th>
-            <td><strong>Mark</strong></td>
-            <td><strong>Otto - oisjfosijfosifjsoasifjsoifjo</strong></td>
-            <td><strong>@mdo</strong></td>
+          <td>Jokes Daily</td>
+          <td>Joke - I find it ironic that the colors red, white, and blue stand for freedom until they are flashing behind you</td>
+          <td>Jan 11</td>
           </tr>
           <tr>
             <th scope="row"><div class="form-check">
@@ -167,9 +166,9 @@ FEB 1, 2017
               </label>
             </div>
           </th>
-            <td><strong>Mark</strong></td>
-            <td><strong>Otto- oisjfosijfosifjsoasifjsoifjo</strong></td>
-            <td><strong>@mdo</strong></td>
+          <td><strong>Steam Store</strong></td>
+          <td><strong>Steam Wishlist - An item on your steam wishlist is on sale</strong></td>
+          <td><strong>Jan 10</strong></td>
           </tr>
           <tr>
             <th scope="row"><div class="form-check">
@@ -178,9 +177,9 @@ FEB 1, 2017
               </label>
             </div>
           </th>
-            <td><strong>Mark</strong></td>
-            <td><strong>Otto - oisjfosijfosifjsoasifjsoifjo</strong></td>
-            <td><strong>@mdo</strong></td>
+            <td><strong>GitHub</strong></td>
+            <td><strong>Welcome to GitHub! - GitHub lets you version your code, collaborate with others, and...</strong></td>
+            <td><strong>Jan10</strong></td>
           </tr>
           <tr>
             <th scope="row"><div class="form-check">
@@ -189,9 +188,9 @@ FEB 1, 2017
               </label>
             </div>
           </th>
-            <td><strong>Mark</strong></td>
-            <td><strong>Otto - oisjfosijfosifjsoasifjsoifjo</strong></td>
-            <td><strong>@mdo</strong><td>
+            <td><strong>Lyft</strong></td>
+            <td><strong>You're getting 20% off - This week until January 15th enjoy 20% off...</strong></td>
+            <td><strong>Jan 8</strong></td>
           </tr>
           <tr>
             <th scope="row"><div class="form-check">
@@ -200,51 +199,22 @@ FEB 1, 2017
               </label>
             </div>
           </th>
-            <td><strong>Mark</strong></td>
-            <td><strong>Otto - oisjfosijfosifjsoasifjsoifjo</strong></td>
-            <td><strong>@mdo</strong></td>
-          </tr>
-          <tr>
-            <th scope="row"><div class="form-check">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-              </label>
-            </div>
-          </th>
-            <td><strong>Mark</strong></td>
-            <td><strong>Otto - oisjfosijfosifjsoasifjsoifjo</strong></td>
-            <td><strong>@mdo</strong></td>
-          </tr>
-          <tr>
-            <th scope="row"><div class="form-check">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-              </label>
-            </div>
-          </th>
-            <td><strong>Mark</strong></td>
-            <td><strong>Otto - oisjfosijfosifjsoasifjsoifjo</strong></td>
-            <td><strong>@mdo</strong></td>
+            <td><strong>Amazon Echo</strong></td>
+            <td><strong>What's new with Alexa? - Nothing is new, considering her search engine is Bing -.-</strong></td>
+            <td><strong>Dec 29</strong></td>
           </tr>
         </tbody>
       </table>
-
-
 <!-- END EMAIL MESSAGES -->
 
 <!-- MAIL OPERATION BUTTONS (MARK AS READ, STAR, DELETE, ETC.) -->
 <div class="row">
   <div class="col-sm-9">
     <div class="span7 text-center">
-    <!-- Secondary, outline button -->
-    <button type="button" class="btn btn-secondary">Restore</button>
-
-    <!-- Indicates caution should be taken with this action -->
-    <button type="button" class="btn btn-info">Restore All</button>
-
-    <!-- Indicates a dangerous or potentially negative action -->
-    <button type="button" class="btn btn-danger">Delete</button>
-  </div>
+      <button type="button" class="btn btn-secondary">Restore</button>
+      <button type="button" class="btn btn-info">Restore All</button>
+      <button type="button" class="btn btn-danger">Delete</button>
+    </div>
   </div>
 </div>
 <!--END MAIL OPERATION BUTTONS -->
@@ -252,7 +222,7 @@ FEB 1, 2017
 <br>
 <br>
 
-<!-- PAGINATION     <div class="col-sm-9">  -->
+<!-- PAGINATION -->
           <div class="row">
             <div class="col-sm-9">
               <nav aria-label="Pages">
