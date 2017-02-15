@@ -12,6 +12,7 @@ FEB 1, 2017
      <neta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
      <!-- Bootstrap Stylesheet -->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+     <script src="https://use.fontawesome.com/2bef2fff45.js"></script>
 
      <title>Compose New Message</title>
 
@@ -21,90 +22,92 @@ FEB 1, 2017
 
  <div class="container">
 
- <!-- HORIZONTAL NAV (MAIL HOME, LOGOUT/MAYBE SETTINGS WITH DROPDOWN?) -->
-     <ul class="nav justify-content-end">
-       <li class="nav-item">
-         <a class="nav-link active" href="inbox.html">Home</a>
-       </li>
-       <li class="nav-item">
-         <a class="nav-link" href="composenewmessage">Refresh</a>
-       </li>
-       <div class="btn-group">
-         <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-           <img src="images/settingsicon.png"/>
-         </button>
-         <div class="dropdown-menu">
-           <a class="dropdown-item" href="#">Account</a>
-           <a class="dropdown-item" href="#">General</a>
-           <a class="dropdown-item" href="#">Help</a>
-           <div class="dropdown-divider"></div>
-           <a class="dropdown-item" href="#">Logout</a>
+   <!-- HORIZONTAL NAV -->
+       <ul class="nav justify-content-end">
+         <li class="nav-item">
+           <a class="nav-link active" href="inbox.html">Home</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="inbox.html">Refresh</a>
+         </li>
+         <div class="btn-group">
+           <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             <i class="fa fa-cog" aria-hidden="true"></i>
+           </button>
+           <div class="dropdown-menu">
+             <a class="dropdown-item" href="#">Account</a>
+             <a class="dropdown-item" href="#">General</a>
+             <a class="dropdown-item" href="#">Help</a>
+             <div class="dropdown-divider"></div>
+             <a class="dropdown-item" href="index.html">Logout</a>
+           </div>
          </div>
-       </div>
-     </ul>
+       </ul>
+   <!-- END HORIZONTAL NAV -->
 
-<!-- MAILBOX ICON BAR -->
-     <nav class="navbar navbar-light bg-faded">
-       <a class="navbar-brand">
-         <img src="images/mailicon.png" width="50" height="45" class="d-inline-block align-top" alt="">
-         &nbsp;&nbsp;&nbsp;Compose New Message
-       </a>
-     </nav>
-<!-- END MAILBOX ICON BAR -->
+   <!-- MAILBOX ICON BAR -->
+       <nav class="navbar navbar-light bg-faded">
+         <a class="navbar-brand">
+           <i class="fa fa-envelope" aria-hidden="true"></i>
+           &nbsp;&nbsp;Inbox
+         </a>
+       </nav>
+   <!-- END MAILBOX ICON BAR -->
 
 <br>
 
- <!-- VERTICAL NAV (COMPOSE, INBOX, SENT, SPAM, TRASH) -->
-   <div class="row">
-     <div class="col-sm-3">
+       <!-- LEFT HAND SIDE VERTICAL NAV -->
+         <div class="row">
+           <div class="col-sm-3">
 
- <!-- LEFT HAND SIDE VERTICAL NAV &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
-       <ul class="list-group">
-         <div class="alert alert-info" role="alert">
-           <a href="inbox.html">
-           4 unread messages
-           </a>
-         </div>
-         <li class="list-group-item active">
-           <a href="composenewmessage.html" style="color:white;">
-             <img src="images/orangearrowicon.png" height="15" width="15">
-             Compose
-           </a>
-         </li>
-         <li class="list-group-item justify-content-between">
-           <a href="inbox.html">
-           Inbox
-           </a>
-           <span class="badge badge-default badge-pill">4</span>
-         </li>
-         <li class="list-group-item justify-content-between">
-           <a href="sent.html">
-           Sent
-           </a>
-           <span class="badge badge-default badge-pill"></span>
-         </li>
-         <li class="list-group-item justify-content-between">
-           <a href="spam.html">
-           Spam
-           </a>
-           <span class="badge badge-default badgboote-pill">33</span>
-         </li>
-         <li class="list-group-item justify-content-between">
-           <a href="trash.html">
-           <img src="images/trashicon.png" width="15" height="15">
-           Trash
-           </a>
-           <span class="badge badge-default badge-pill">7</span>
-         </li>
-       </ul>
-     </div> <!-- COL-SM-3 DIV -->
- <!-- END LEFT HAND SIDE VERTICAL NAV -->
+             <ul class="list-group">
+               <div class="alert alert-info" role="alert">
+                 <a href="inbox.html">
+                 4 unread messages
+                 </a>
+               </div>
+               <li class="list-group-item active">
+                 <a href="composenewmessage.html" style="color:white;">
+                   Compose
+                 </a>
+               </li>
+               <li class="list-group-item justify-content-between">
+                 <a href="inbox.html">
+                 <i class="fa fa-inbox" aria-hidden="true">&nbsp;</i>
+                 Inbox
+                 </a>
+                 <span class="badge badge-default badge-pill">4</span>
+               </li>
+               <li class="list-group-item justify-content-between">
+                 <a href="sent.html">
+                 <i class="fa fa-paper-plane" aria-hidden="true">&nbsp;</i>
+                 Sent
+                 </a>
+                 <span class="badge badge-default badge-pill"></span>
+               </li>
+               <li class="list-group-item justify-content-between">
+                 <a href="spam.html">
+                   <i class="fa fa-flag" aria-hidden="true">&nbsp;</i>
+                 Spam
+                 </a>
+                 <span class="badge badge-default badgboote-pill">33</span>
+               </li>
+               <li class="list-group-item justify-content-between">
+                 <a href="trash.html">
+                 <i class="fa fa-trash" aria-hidden="true">&nbsp;</i>
+                 Trash
+                 </a>
+                 <span class="badge badge-default badge-pill">7</span>
+               </li>
+             </ul>
+           </div> <!-- COL-SM-3 DIV -->
+       <!-- END LEFT HAND SIDE VERTICAL NAV -->
 
 
  <!-- EMAIL MESSAGES -->
      <div class="col-sm-9">
          <div class="container">
-           <form>
+           <form action="success.html" method="GET">
              <div class="form-group">
                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter recipient(s)">
                <small id="emailHelp" class="form-text text-muted">&nbsp;&nbsp;Cc  Bcc</small>
@@ -118,8 +121,7 @@ FEB 1, 2017
            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
          </div>
            <button type="submit" class="btn btn-primary">
-             <img src="images/airplaneicon.png" height="15" width="15">
-             <a href="success.html"style="color:white;">&nbsp;&nbsp;Send</a>
+              Send
            </button>
          </form>
         </div>
